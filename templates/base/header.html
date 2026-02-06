@@ -1,0 +1,47 @@
+{% load static %}
+<header id="header" class="header d-flex align-items-center position-relative">
+  <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+    <a href="{% url 'home' %}" class="logo d-flex align-items-center me-auto me-xl-0">
+      <!-- <img src="{% static 'img/logo.webp' %}" alt=""> -->
+
+      <!-- <h1 class="sitename">Sambhavi Trading</h1> -->
+    </a>
+
+    {% include 'base/navbar.html' %}
+
+  </div>
+</header>
+
+{% block hero %}
+<section id="hero" class="hero section">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-lg-5">
+        <div class="book-hero-content" data-aos="fade-up" data-aos-delay="200">
+          <span class="book-genre">Science Fiction</span>
+          <h1>Beyond the Quantum Horizon</h1>
+          <p class="book-subtitle">A journey through time and space that will transform your perception</p>
+          <div class="author">
+            <span>By</span>
+            <h3>John Doe</h3>
+          </div>
+          <p class="book-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada.
+          </p>
+          <div class="hero-cta">
+            <a href="#purchase" class="btn-primary">Get Your Copy</a>
+            <a href="#excerpt" class="btn-outline">Read Preview</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 d-flex justify-content-center justify-content-lg-end" data-aos="zoom-out" data-aos-delay="300">
+        <div class="book-cover">
+          <img src="{% static 'img/book/book-1.webp' %}" alt="Book Cover" class="img-fluid">
+          <div class="book-shadow"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><
+{% endblock %}

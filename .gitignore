@@ -1,3 +1,76 @@
+# --- Python & Django ---
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django specific
+*.log
+*.pot
+*.pyc
+db.sqlite3
+db.sqlite3-journal
+*.mo
+
+# Ignore local settings (if any)
+local_settings.py
+settings_local.py
+
+# Migrations (optional — keep if your team generates them centrally)
+*/migrations/
+!*/migrations/__init__.py
+
+# --- Virtual Environments ---
 venv/
+env/
+ENV/
+.venv/
+.virtualenv/
+pip-wheel-metadata/
+
+# --- Build / Distribution ---
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+*.manifest
+*.spec
+
+# --- IDEs / Editors ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# --- System files ---
+.DS_Store
+Thumbs.db
+
+# --- Testing / Coverage ---
+.coverage
+htmlcov/
+.tox/
+.nox/
+.pytest_cache/
+pytestdebug.log
+.cache/
+
+# --- Static / Media / Vendor ---
+staticfiles/
+
+media/
+vendor/
+
+# --- Other tools ---
+celerybeat-schedule
+*.pid
+*.seed
+*.log
+
+# --- Environment / Credentials ---
 .env
-*/__pycache__/
+.env.*
+*.bak
+*.tmp

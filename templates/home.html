@@ -1,0 +1,100 @@
+{% extends 'base/index.html' %}
+{% load static %}
+
+{% block title %}Home - Sambhavi Traders{% endblock %}
+
+{% block header %}
+  {% include 'base/header.html' %}
+{% endblock %}
+
+{% block content %}
+ 
+    {% include 'sections/about.html' %}
+    {% include 'sections/feature.html' %}
+
+ 
+
+  <!-- <section id="about-author" class="about-author section light-background">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+          <div class="author-image">
+            <img src="{% static 'img/person/person-m-1.webp' %}" alt="Author Name" class="img-fluid">
+            <div class="author-signature">
+              <img src="{% static 'img/misc/signature-1.webp' %}" alt="Author Signature" class="img-fluid">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+          <div class="author-info">
+            <h2>About the Author</h2>
+            <h3>John Doe</h3>
+            <div class="author-credentials">Bestselling Author of Science Fiction &amp; Fantasy</div>
+
+            <div class="author-bio">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget tortor risus. Nulla quis lorem ut libero malesuada feugiat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
+              </p>
+              <p>
+                Quisque velit nisi, pretium ut lacinia in, elementum id enim. Cras ultricies ligula sed magna dictum porta. Donec rutrum congue leo eget malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel.
+              </p>
+              <p>
+                Pellentesque in ipsum id orci porta dapibus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Donec rutrum congue leo eget malesuada.
+              </p>
+            </div>
+
+            <div class="author-awards">
+              <h4>Awards &amp; Recognition</h4>
+              <ul>
+                <li><i class="bi bi-award"></i> <span>Lorem Ipsum Award for Outstanding Fiction (2023)</span></li>
+                <li><i class="bi bi-award"></i> <span>Dolor Sit Literary Prize (2021)</span></li>
+                <li><i class="bi bi-award"></i> <span>Consectetur Adipiscing Medal (2019)</span></li>
+              </ul>
+            </div>
+
+            <div class="author-social">
+              <h4>Connect with the Author</h4>
+              <div class="social-links">
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-globe"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Testimonials Section -->
+   {% include 'sections/testimonials.html' %}
+  <!-- /Testimonials Section -->
+
+  <!-- Purchase Section -->
+   {% include 'sections/purchase.html' %}
+<!-- /Purchase Section -->
+
+  <!-- Faq Section -->
+   {% include 'sections/faq.html' %}
+  <!-- /Faq Section -->
+
+  
+
+  <!-- Related Products Section -->
+   {% include 'sections/products.html' %}
+  <!-- /Related products Section -->
+
+  <!-- Call To Action Section -->
+   {% include 'sections/cta.html' %}
+  
+   <!-- Contact Section -->
+   {% include 'sections/contact.html' %}
+  <!-- /Contact Section -->
+{% endblock %}
+
+{% block footer %}
+  {% include 'base/footer.html' %}
+{% endblock %}
